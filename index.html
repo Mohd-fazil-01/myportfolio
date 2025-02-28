@@ -139,18 +139,23 @@
     <h2 class="heading">Contact <span>Me</span></h2>
 
     <form action="https://formsubmit.co/fazilansari038@gmail.com" method="POST">
-        <div class="input-box">
-           <input type="text" placeholder="Full Name">
-           <input type="email" placeholder="Email Address"> 
-        </div>
+    <input type="hidden" name="_captcha" value="false">
 
-        <div class="input-box">
-            <input type="number" placeholder="Mobile Nmuber">
-            <input type="text" placeholder="Email Subject">
-        </div>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-        <input type="submit" value="Send Message" class="btn">
-    </form>
+    <div class="input-box">
+       <input type="text" name="full_name" placeholder="Full Name" required>
+       <input type="email" name="email" placeholder="Email Address" required> 
+    </div>
+
+    <div class="input-box">
+        <input type="number" name="mobile" placeholder="Mobile Number" required>
+        <input type="text" name="subject" placeholder="Email Subject" required>
+    </div>
+
+    <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+
+    <input type="submit" value="Send Message" class="btn">
+</form>
+
  </section>
 
   <!--FOOTER DESIGN-->
